@@ -2,6 +2,15 @@
 
 This is a repository which stores code and datasets used for sudoku solver program using AI algorithm. Uses search and CSP to solve Sudoku puzzles.
 
+In this project, I have obtained a Sudoku puzzle dataset from “Sudoku.com” (www.Sudoku.com), and manually written text document of initial state of sudoku board. I have written a program in python which converts these text documents into Sudoku object that is suitable for running AI algorithms. 
+
+The website defines different difficulties for Sudoku puzzle, from easiest to hardest, difficulties are named as: “easy”, “medium”, “hard”, “expert”, “master”, and “extreme”. Number of initially empty squares increases as the difficulty increase, and I have obtained two Sudoku data for each difficulty classes. 
+
+Sudoku object is an object class that I created in python and contains 2D array which represents digits placement on each grid. The empty grid is represented as 0. The interaction with Sudoku board defined in this class includes obtaining current grid placements, placing a digit on next empty grid or any given grid, checking weather there exists any empty grids within the board, and weather the current placement of digits violates any Sudoku constraints.
+
+For note, all programs are implemented by hand, and I did not use any outside library which helps me doing the algorithm, other than NumPy. 
+
+
 ## About code files:
 “CSP.py”: The code which stores interface for CSP object class, and stores operations it can perform.
 
